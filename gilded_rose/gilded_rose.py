@@ -32,7 +32,7 @@ class GildedRose(object):
                     if item.name != "Sulfuras, Hand of Ragnaros":
                         item.quality = item.quality - 1
             if item.name != "Sulfuras, Hand of Ragnaros":
-                item.sell_in = item.sell_in - 1
+                self.sellin_decrease(item)
             if item.sell_in < 0:
                 if item.name != "Aged Brie":
                     if item.name != "Backstage passes to a TAFKAL80ETC concert":
